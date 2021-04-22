@@ -9,7 +9,7 @@
 
 ## Outline
 - The platform is based on vue-flask.
-- The algorithm inherites from [DFDNet](https://github.com/csxmli2016/DFDNet).
+- The algorithm extends from [DFDNet](https://github.com/csxmli2016/DFDNet).
 
 ## Reference
 [DFDNet](https://github.com/csxmli2016/DFDNet)
