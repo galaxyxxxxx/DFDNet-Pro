@@ -4,8 +4,8 @@
 
 ## Todos
 ### week8
-- initialize and design UI.
-- extract the feature from a single image, and the data type is followed by what DFDNet(b) needs.
+- Initialize and design UI.
+- Extract the feature from a single image, and the data type is followed by what DFDNet(b) needs.
 
 ## Outline
 - The platform is based on vue-flask.
