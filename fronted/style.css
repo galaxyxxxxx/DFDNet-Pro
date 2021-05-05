@@ -1,0 +1,274 @@
+/* header */
+header{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+header .title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 20rem;
+}
+.navItem{
+    display: inline;
+    margin: 0 4rem;
+    line-height: 4rem;
+    opacity: 0.4;
+    box-sizing: content-box;
+    transition: 0.2s linear;
+    font-size: 1.5rem;
+}
+.navItem:hover{
+    opacity: 1;
+    border-bottom: 4px solid #8f94fb;
+}
+.contact{
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    margin-left: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    transition: letter-spacing 0.2s linear;
+}
+.contact:hover{
+    letter-spacing: 2px;
+}
+/* footer */
+footer{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+/* main */
+.container{
+    min-height: 60vh;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .left{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.container .left .title{
+    font-size: 8rem;
+    font-weight: bolder;
+    animation: showTitle 2s linear forwards;
+}
+@keyframes showTitle {
+    from{
+        /* color: #8f94fb; */
+        opacity: 0.2;
+        letter-spacing: 4px;
+    }
+    to{
+        color: #000;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+}
+.left .slogan{
+    width: 24rem;
+    font-size: 2rem;
+}
+.left .try{
+    width: 12rem;
+    height: 4rem;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.left .imgType{
+    opacity: 0.5;
+}
+.left .try:hover{
+    background-color:#000;
+    color:#fff;
+}
+.container .right{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.blur img{
+    width: 24vw;
+    transform: translateX(12vw);
+    animation: toHide 2s linear forwards;
+    animation-delay: 0.5s;
+    backdrop-filter: brightness(0);
+}
+.clear img{
+    width: 40vw;
+    opacity: 0;
+    animation: toShow 2s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes toShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes toHide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+.next{
+    margin-top: 12vh;
+    text-align: center;
+    color: #000;
+    height: 18vh;
+    font-size: 10rem;
+    animation: toNext 2s linear infinite;
+}
+@keyframes toNext {
+    from {
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(5vh);
+    }
+}
+
+/* user  */
+.use{
+    /* border-top: 1px solid #000; */
+}
+.use .main{
+    /* background-color: #ffffff80; */
+    border-radius: 4rem;
+    min-height: 50vh;
+    padding: 2rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+}
+.head{
+    min-height: 4vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.head .left{
+    display:flex;
+    align-items:center;
+}
+.add{
+    border: 4px solid #000;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.head .left .title{
+    margin-left: 1rem;
+}
+.head .right{
+    border-bottom: 2px solid #00000080;
+}
+.process{
+    display: flex;
+    justify-content: center;
+}
+.processItem{
+    color: #00000080;
+    margin-left: 4rem;
+}
+/* 处理区域 */
+.upload2res{
+    flex: 1;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.upload{
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: -1rem 1rem 2rem #8f94fb80;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    min-height: 40vh;
+}
+.top{
+    margin: 4rem;
+    
+    border: 4px dashed #8f94fb80;
+    border-radius: 2rem;
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    padding: 2rem 0 ;
+}
+.dragImg img{
+    flex: 1;
+    max-height: 8vh;
+    animation: toSwag 1s linear alternate infinite;
+}
+@keyframes toSwag {
+    0% {
+        opacity: 0.8;
+        transform: rotate(-15deg);
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0.8;
+        transform: rotate(15deg);
+    }
+}
+.dragTitle{
+    width: 24rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.uploadBtn{
+    color: #fff;
+    background-color: #8f94fb;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}

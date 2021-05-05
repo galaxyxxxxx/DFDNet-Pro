@@ -1,0 +1,22 @@
+{
+  "name": "dfdnet-pro",
+  "version": "1.0.0",
+  "description": "- Initialize and design UI.\r - Extract the feature from a single image, and the data type is followed by what DFDNet(b) needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galaxyxxxxx/DFDNet-Pro.git"
+  },
+  "keywords": [
+    "DFDNet"
+  ],
+  "author": "Li Jinxing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galaxyxxxxx/DFDNet-Pro/issues"
+  },
+  "homepage": "https://github.com/galaxyxxxxx/DFDNet-Pro#readme"
+}
